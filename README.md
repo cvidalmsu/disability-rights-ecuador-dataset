@@ -30,21 +30,9 @@ Describes the variables found in the main dataset, including data types and codi
 * **Post_Test_Score:** Assessment score (0-10) after training.
 * **Feedback_Category:** Primary barrier reported (Transport, Family, Cost, etc.).
 
-### 3. `generate_disability_data.py`
-The Python script used to generate and structure the dataset, ensuring statistical consistency with the reported results in the manuscript.
-
 ## 🚀 Usage Notes
 This dataset is valuable for researchers in:
 * **Disability Studies:** Analyzing intersectional barriers (Gender + Rurality).
 * **Public Policy:** Evaluating the efficacy of rights-based education.
 * **Social Sciences:** Modeling the "participation gap" in the Global South.
 
-### Example Analysis (Python/Pandas)
-```python
-import pandas as pd
-
-df = pd.read_csv("training_participants.csv")
-
-# Analyze improvement in scores
-df['Improvement'] = df['Post_Test_Score'] - df['Pre_Test_Score']
-print(df.groupby('Location')['Improvement'].mean())
