@@ -1,0 +1,9 @@
+Variable,Type,Description
+ID,Nominal,"Unique anonymized identifier (e.g., P001)"
+Gender,Categorical,"Male, Female"
+Age,Continuous,Age of the participant in years
+Location,Categorical,"Urban, Rural"
+Disability_Type,Categorical,"Physical, Sensory, Intellectual, Psychosocial"
+Pre_Test_Score,Continuous,Score (0-10) before training
+Post_Test_Score,Continuous,Score (0-10) after training
+Feedback_Category,Nominal,"Primary barrier reported (Transport, Family, None, Cost)"
